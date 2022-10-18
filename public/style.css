@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(231, 216, 228);
+    background-color: rgb(185, 159, 212);
 }
 /* -------------- room.ejs -------------- */
 
@@ -12,17 +12,23 @@ h1 {
     margin-top: 15px;
 }
 
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(0, 0, 0);
+    opacity: 1; /* Firefox */
+  }
+
 input {
     width: 100%;
     height: 40px;
     text-indent: 10px;
+    color: rgb(0, 0, 0);
 }
 
 button {
     width: 100%;
     height: 50px;
     background-color: #1a2eda;
-    color: white;
+    color: rgb(102, 125, 160);
     font-size: larger;
     font-weight: bold;
     outline: none;
@@ -79,7 +85,7 @@ button {
 }
 
 .users p {
-    background-color: rgb(110, 103, 103);
+    background-color: rgb(0, 0, 0);
     color: white;
 }
 
@@ -104,6 +110,10 @@ button {
     height: 50px;
     border: 1px solid black;
     border-radius: 7px;
+}
+
+textarea:focus, input:focus {
+    color: #000000;
 }
 
 .content input[type="submit"] {
